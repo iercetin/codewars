@@ -1,9 +1,9 @@
-from solution import get_order
 from os.path import dirname, abspath
 import sys
 sys.path.append(dirname(dirname(abspath(__file__))))
 from tests import Test
 
+from best import get_order
 
 Test.assert_equals(get_order("milkshakepizzachickenfriescokeburgerpizzasandwichmilkshakepizza"),
                             "Burger Fries Chicken Pizza Pizza Pizza Sandwich Milkshake Milkshake Coke");

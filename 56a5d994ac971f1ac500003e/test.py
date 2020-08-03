@@ -3,7 +3,7 @@ import sys
 sys.path.append(dirname(dirname(abspath(__file__))))
 from tests import Test
 
-from solution import longest_consec
+from best import longest_consec
 
 Test.assert_equals(longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2), "abigailtheta")
 Test.assert_equals(longest_consec(["ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"], 1), "oocccffuucccjjjkkkjyyyeehh")

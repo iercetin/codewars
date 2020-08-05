@@ -21,7 +21,7 @@ def bracket_pairs(string):
             allow += 1
             skip = 0
             substring = string[i+1:]
-            
+
             for idx in range(len(substring)):
                 els = substring[idx]
 
@@ -46,8 +46,8 @@ def bracket_pairs(string):
 
     return result
 
-print(bracket_pairs(")())x))))x))x)))x)))())()))(("),False)
-print(bracket_pairs("((x))()"),{1: 3, 0: 4, 5: 6})
-print(bracket_pairs("()(x)"),{0: 1, 2: 4})
-print(bracket_pairs("()())())())))()()x)))x)x)x))"),False)
 
+print(bracket_pairs(")())x))))x))x)))x)))())()))(("), False)
+print(bracket_pairs("((x))()"), {1: 3, 0: 4, 5: 6})
+print(bracket_pairs("()(x)"), {0: 1, 2: 4})
+print(bracket_pairs("()())())())))()()x)))x)x)x))"), False)

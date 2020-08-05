@@ -1,7 +1,9 @@
 # New Cashier Does Not Know About Space or Shift
 # https://www.codewars.com/kata/5d23d89906f92a00267bb83d/solutions/python
 
-items = ["Burger","Fries","Chicken","Pizza","Sandwich","Onionrings","Milkshake","Coke"]
+items = ["Burger", "Fries", "Chicken", "Pizza",
+         "Sandwich", "Onionrings", "Milkshake", "Coke"]
+
 
 def get_order(order):
     r = ""
@@ -27,5 +29,5 @@ def get_order(order):
         if item in amounts:
             for i in range(amounts[item]):
                 l.append(item)
-   
+
     return " ".join(l)
